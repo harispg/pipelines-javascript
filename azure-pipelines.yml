@@ -19,11 +19,6 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-
-# Node.js
-- task: Npm@1
+- task: CmdLine@2
   inputs:
-    command: 'install'
-    workingDir: 'harispg.pipelines-javascript/'
-    customRegistry: 'useFeed'
-    customFeed: '71f5b5a8-582c-4042-bde2-2e235e5e74e1'
+    script: 'npm install cross-env'
