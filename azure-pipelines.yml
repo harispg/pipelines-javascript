@@ -23,6 +23,7 @@ steps:
 # Node.js
 - task: Npm@1
   inputs:
-    command: 'custom'
-    workingDir: '/'
-    customCommand: 'install cross-env'
+    command: 'install'
+    workingDir: 'harispg.pipelines-javascript/'
+    customRegistry: 'useFeed'
+    customFeed: '71f5b5a8-582c-4042-bde2-2e235e5e74e1'
